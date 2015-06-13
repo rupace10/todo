@@ -14,7 +14,7 @@ class TaskListsController < ApplicationController
 
   # GET /task_lists/new
   def new
-    @task_list = TaskList.new
+    @task_list = current_user.task_lists.build
   end
 
   # GET /task_lists/1/edit
@@ -24,7 +24,7 @@ class TaskListsController < ApplicationController
   # POST /task_lists
   # POST /task_lists.json
   def create
-    @task_list = TaskList.new(task_list_params)
+    @task_list = current_user.task_lists.build(task_list_params)
 
     respond_to do |format|
       if @task_list.save
