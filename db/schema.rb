@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150613023033) do
+ActiveRecord::Schema.define(version: 20150613025720) do
 
   create_table "task_items", force: true do |t|
     t.string   "content"
     t.integer  "task_list_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.datetime "completed_at"
   end
 
   add_index "task_items", ["task_list_id"], name: "index_task_items_on_task_list_id"
