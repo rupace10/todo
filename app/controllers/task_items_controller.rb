@@ -18,6 +18,7 @@ class TaskItemsController < ApplicationController
 
 	def complete
 		@task_item.update_attribute(:completed_at, Time.now)
+		# this:@task_item.toggle_completion
 		redirect_to @task_list, notice: "Task item has been completed"
 	end
 
