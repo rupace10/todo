@@ -27,3 +27,9 @@ body {
 	background:     -ms-linear-gradient(25deg, #e43f3f 10%, #f0f1e0 100%) no-repeat;
  	height: 100%;
 }
+a{
+	text-decoration:none;
+}
+a:before{
+	text-decoration:none;
+}
