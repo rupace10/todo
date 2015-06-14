@@ -12,7 +12,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'devise', '~> 3.5.1'
-
+gem 'bootstrap-sass', '~> 3.3.4.1'
+gem 'font-awesome-sass', '~> 4.3.0'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
