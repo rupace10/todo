@@ -4,7 +4,17 @@
 
 .wrapper{
 	height: 100%;
+	.title{
+		text-align: center;
+	}
 	.sign-up{
+		margin-top: 50px;
+		width: 100%;
+		text-align: center;
+	}
+	.log-in{
+		margin: 20px;
+		padding: 50px;
 		text-align: center;
 	}
 }
