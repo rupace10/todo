@@ -1,3 +1,27 @@
 // Place all the styles related to the task_lists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.task-list{
+	width: 100%;
+	.task-heading{
+		text-align: center;
+	}
+	.tl-content{
+		text-align: center;
+		width: 600px;
+		padding: 50px;
+		border: solid #ffffff;
+		.t-d{
+			width: 100%;
+			float: left;
+			border-bottom: solid;
+			.t-title{
+				float: left;
+			}
+			.desc{
+				float: left;
+			}
+		}
+	}
+}

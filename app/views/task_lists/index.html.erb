@@ -1,3 +1,15 @@
+<div class="task-list">
+<h1 class="task-heading" >Task List</h1>
+  <div class="tl-content container">
+  <% @task_lists.each do |task_list| %>
+    <div class="t-d">
+      <h2 class="t-title"><%= link_to task_list.title, task_list %></h2>
+      <p class="desc"><%= task_list.description %></p>
+    </div>
+  <% end %>
+  </div>
+</div>
+
 <h1>Listing task_lists</h1>
 
 <table>
