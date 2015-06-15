@@ -6,21 +6,33 @@
 	width: 100%;
 	.task-heading{
 		text-align: center;
+		margin-bottom: 30px;
 	}
 	.tl-content{
 		text-align: center;
 		width: 600px;
-		padding: 50px;
+		padding: 30px 50px 50px;
+		background-color: #fff;
+		opacity: 0.5;
 		border: solid #ffffff;
+		height: auto;
+		border-radius: 9px;
+		box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
 		.t-d{
 			width: 100%;
 			float: left;
 			border-bottom: solid;
-			.t-title{
+			padding: 10px;
+			/*.t-title{
 				float: left;
 			}
 			.desc{
 				float: left;
+			}*/
+		}
+		.new-list{
+			a{
+				margin-top: 20px;
 			}
 		}
 	}
