@@ -26,11 +26,11 @@ a{
 			border-bottom: solid;
 			padding: 10px;
 			.t-title{
-				float: left;
+
 				width: 100%;
 				display: block;
 				a{
-					float: left;
+
 					color: #e62e2e;
 					text-decoration: none;
 					transition: all .3s ease-in-out;
@@ -40,10 +40,9 @@ a{
 				}
 			}
 			.desc{
-				float: left;
 				display: block;
 				p{
-					font: italic;
+					font-style: italic;
 				}
 			}
 		}
