@@ -1,14 +1,29 @@
-<div class="task-list">
-	<% if task_item.completed? %>
-			<p><%= link_to "Done", complete_task_list_task_item_path(@task_list, task_item.id), method: :patch %>
-
-			<p><%= task_item.content %></p>
-			<%= link_to "Delete", task_list_task_item_path(@task_list, task_item.id), method: :delete, data: { confirm: "Are you sure?" } %>
-			</p>
-	<% else %>
-			<p><%= link_to "Done", complete_task_list_task_item_path(@task_list, task_item.id), method: :patch %>
-			<p><%= task_item.content %></p>
-			<%= link_to "Delete", task_list_task_item_path(@task_list, task_item.id), method: :delete, data: { confirm: "Are you sure?" } %>
-			</p>
-	<% end %>
-<div class="task-list">
+<% if task_item.completed? %>
+	<div class="completed">
+		<%= link_to  complete_task_list_task_item_path(@task_list, task_item.id), method: :patch do %>
+			<i style="opacity: 0.4;" class="fa fa-check fa-2x"></i>
+		<% end %>
+	</div>
+	<div class="task_item">
+		<p style="opacity: 0.4;"><strike><%= task_item.content %></strike></p>
+	</div>
+	<div class="trash">
+		<%= link_to  task_list_task_item_path(@task_list, task_item.id), method: :delete, data: { confirm: "Are you sure?" } do %>
+			<i class="fa fa-trash fa-2x"></i>
+		<% end %>
+	</div>
+<% else %>
+	<div class="cmompleted">
+		<%= link_to complete_task_list_task_item_path(@task_list, task_item.id), method: :patch do %>
+				<i class="fa fa-check fa-2x"></i>
+			<% end %>
+	</div>
+	<div class="task_item">
+		<p><%= task_item.content %></p>
+	</div>
+			<div class="trash">
+			<%= link_to task_list_task_item_path(@task_list, task_item.id), method: :delete, data: { confirm: "Are you sure?" } do %>
+				<i class="fa fa-trash fa-2x"></i>
+			<% end %>
+		</div>
+<% end %>
