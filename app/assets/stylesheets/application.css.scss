@@ -21,13 +21,17 @@
 @import "task_lists.css.scss";
 @import "task_items.css.scss";
 
+html {
+  height: 100%;
+}
 body {
 	background: linear-gradient(25deg, #e43f3f 10%, #f0f1e0 100%) no-repeat;
 	background: -webkit-linear-gradient(25deg, #e43f3f 10%, #f0f1e0 100%) no-repeat;
 	background:    -moz-linear-gradient(25deg, #e43f3f 10%, #f0f1e0 100%) no-repeat;
 	background:      -o-linear-gradient(25deg, #e43f3f 10%, #f0f1e0 100%) no-repeat;
 	background:     -ms-linear-gradient(25deg, #e43f3f 10%, #f0f1e0 100%) no-repeat;
- 	height: 100%;
+ 	padding: 0px;
+ 	margin: 0px;
 }
 a{
 	text-decoration:none;

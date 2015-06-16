@@ -13,7 +13,7 @@
 		<% end %>
 	</div>
 <% else %>
-	<div class="cmompleted">
+	<div class="completed">
 		<%= link_to complete_task_list_task_item_path(@task_list, task_item.id), method: :patch do %>
 				<i class="fa fa-check fa-2x"></i>
 			<% end %>
