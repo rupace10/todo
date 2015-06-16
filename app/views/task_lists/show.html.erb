@@ -1,3 +1,19 @@
+<div class="task-list">
+<h1 class="task-heading" >Task List</h1>
+  <div class="tl-content container">
+    <% @task_lists.each do |task_list| %>
+      <div class="t-d">
+        <h2 class="t-title"><%= link_to task_list.title, task_list %></h2>
+        <p class="desc"><%= task_list.description %></p>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="new-list container">
+    <%= link_to 'New Task list', new_task_list_path %>
+  </div>
+</div>
+
 <p id="notice"><%= notice %></p>
 
 <p>

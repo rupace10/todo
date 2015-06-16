@@ -16,33 +16,34 @@ a{
 		padding: 30px 50px 50px;
 		background-color: rgba(250, 250, 250, .3);;
 		opacity: 0.5;
-		border: solid #ffffff;
+		border: #ffffff;
 		height: auto;
 		border-radius: 9px;
 		box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
-
-		.post-content{
-			height: 100%;
+		.t-d{
 			width: 100%;
-
-			.t-d{
-				width: 100%;
+			float: left;
+			border-bottom: solid;
+			padding: 10px;
+			.t-title{
 				float: left;
-				border-bottom: solid;
-				padding: 10px;
-				.t-title{
+				width: 100%;
+				display: block;
+				a{
 					float: left;
-					a{
-						color: #fd6767;
-						text-decoration: none;
-						transition: all .3s ease-in-out;
-						&:hover {
-							color: #c20000;
-						}
+					color: #e62e2e;
+					text-decoration: none;
+					transition: all .3s ease-in-out;
+					&:hover {
+						color: #c20000;
 					}
 				}
-				.desc{
-					float: left;
+			}
+			.desc{
+				float: left;
+				display: block;
+				p{
+					font: italic;
 				}
 			}
 		}
