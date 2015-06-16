@@ -1,7 +1,9 @@
 // Place all the styles related to the task_lists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+a{
+	text-decoration: none;
+}
 .task-list{
 	width: 100%;
 	.task-heading{
@@ -12,28 +14,59 @@
 		text-align: center;
 		width: 600px;
 		padding: 30px 50px 50px;
-		background-color: #fff;
+		background-color: rgba(250, 250, 250, .3);;
 		opacity: 0.5;
 		border: solid #ffffff;
 		height: auto;
 		border-radius: 9px;
 		box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
-		.t-d{
+
+		.post-content{
+			height: 100%;
 			width: 100%;
-			float: left;
-			border-bottom: solid;
-			padding: 10px;
-			/*.t-title{
+
+			.t-d{
+				width: 100%;
 				float: left;
+				border-bottom: solid;
+				padding: 10px;
+				.t-title{
+					float: left;
+					a{
+						color: #fd6767;
+						text-decoration: none;
+						transition: all .3s ease-in-out;
+						&:hover {
+							color: #c20000;
+						}
+					}
+				}
+				.desc{
+					float: left;
+				}
 			}
-			.desc{
-				float: left;
-			}*/
 		}
-		.new-list{
+	}
+
+	.new-list{
+		text-align: center;
+		width: 600px;
+		padding: 30px 50px 50px;
+		background-color: #fff;
+		opacity: 0.3;
+		border: solid #ffffff;
+		height: auto;
+		border-radius: 9px;
+		box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
+		a{
+			margin-top: 20px;
+			font-size: 2em;
+			text-decoration: none;
+			color: #fd6767;
 			text-align: center;
-			a{
-				margin-top: 20px;
+			transition: all .3s ease-in-out;
+			&:hover {
+				color: #c20000;
 			}
 		}
 	}
