@@ -29,7 +29,6 @@ a{
 				width: 100%;
 				display: block;
 				a{
-
 					color: #e62e2e;
 					text-decoration: none;
 					transition: all .3s ease-in-out;
@@ -39,10 +38,19 @@ a{
 				}
 			}
 			.desc{
-				display: block;
+				/*display: block;*/
 				p{
 					font-style: italic;
 				}
+			}
+		}
+		#task_items_wrapper{
+			text-align: center;
+			display: inline;
+			.form{
+				display: inline;
+				width: auto;
+				height: auto;
 			}
 		}
 	}
@@ -69,4 +77,15 @@ a{
 			}
 		}
 	}
+	.link{
+		margin-top: 15px;
+		text-align: center;
+		padding: 2px;
+	}
+}
+
+.link{
+	margin-top: 15px;
+	text-align: center;
+	padding: 2px;
 }

@@ -4,17 +4,23 @@
 		<div class="t-d">
 			<h2 class="t-title"> <%= @task_list.title %> </h2>
 			<p class="desc"><%= @task_list.description %></p>
+			<%= link_to edit_task_list_path(@task_list) do %><i class="fa fa-pencil fa-2x"></i>
+			<% end %>
 		</div>
-		<div id="todo_items_wrapper">
+
+		<div id="task_items_wrapper">
 			<%= render @task_list.task_items %>
-			<div id="form">
+			<div class="form">
 				<%= render "task_items/form" %>
 			</div>
 		</div>
+	</div>
+	<div class="link">
+	<%= link_to task_lists_path do %>
+		<div class="btn btn-danger btn-mg"><i class="fa fa-arrow-left fa-2x"></i> &nbsp; </div>
+	<% end %>
 	</div>
 </div>
 
 
 
-<%= link_to 'Edit', edit_task_list_path(@task_list) %> |
-<%= link_to 'Back', task_lists_path %>
