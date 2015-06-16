@@ -1,6 +1,12 @@
-<h1>Editing task_list</h1>
+<h1>Edit </h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @task_list %> |
-<%= link_to 'Back', task_lists_path %>
+</br>
+</br>
+</br>
+<div class="link">
+<%= link_to  @task_list do %>
+	<div class="btn btn-danger btn-mg"><i class="fa fa-arrow-left fa-2x"></i> &nbsp; </div>
+<% end %>
+</div>
