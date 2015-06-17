@@ -10,7 +10,9 @@
   </div>
 
   <div class="new-list container">
-    <i class="fa fa-plus fa-3x"></i> &nbsp; <%= link_to 'New Task list', new_task_list_path %>
+   <%= link_to new_task_list_path do %>
+    <i class="fa fa-plus fa-2x"></i>
+    <% end %>
   </div>
 </div>
 

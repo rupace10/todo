@@ -10,20 +10,20 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+
  *= require_self
  */
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "welcome.css.scss";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
 @import "task_lists.css.scss";
 @import "task_items.css.scss";
+@import "welcome.css.scss";
 
-html {
-  height: auto;
-}
+
 body {
 	background: linear-gradient(25deg, #e43f3f 10%, #f0f1e0 100%) no-repeat;
 	background: -webkit-linear-gradient(25deg, #e43f3f 10%, #f0f1e0 100%) no-repeat;
