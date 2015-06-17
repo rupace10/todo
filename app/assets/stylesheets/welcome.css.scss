@@ -25,12 +25,16 @@ body {
 	height: auto;
 	border-bottom: solid #bdacac;
 	margin-bottom: 25px;
-	.title{
+	.banner{
+		margin-top: 70px;
+		.title{
 		text-align: center;
-		h1{
-			color: #858585;
+			h1{
+				color: #858585;
+			}
 		}
 	}
+
 	.sign-up{
 		margin-top: 50px;
 		width: 100%;
