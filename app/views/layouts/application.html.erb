@@ -7,11 +7,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+<% if notice %>
+<div id="notification">
+	<p class="notice"><%= notice %></p>
+</div>
+<% elsif alert %>
+<div id="notification">
+	<p class="alert"><%= alert %></p>
+</div>
+<% end %>
 
 <%= yield %>
 
+<script type="text/javascript">
+	$(document).ready(function(){
+		setTimeout(function(){
+			$('#notification').fadeOut("slow", function(){
+				$(this).remove();
+			})
+		}, 4000);
+	});
+</script>
 </body>
 </html>

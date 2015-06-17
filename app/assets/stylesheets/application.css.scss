@@ -23,7 +23,22 @@
 @import "task_lists.css.scss";
 @import "task_items.css.scss";
 
-
+#notification{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+	background: rgba(135, 216, 211, 0.85);
+	p{
+		padding: 1.75rem 0;
+		text-align: center;
+		margin: 0;
+		font-size: 1.25rem;
+		font-weight: 700;
+		color: #fff;
+		letter-spacing: 1px;
+	}
+}
 
 body {
 	background: linear-gradient(25deg, #e43f3f 0%, #f0f1e0 100%) no-repeat;
