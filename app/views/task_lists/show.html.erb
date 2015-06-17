@@ -6,6 +6,12 @@
 			<p class="desc"><%= @task_list.description %></p>
 			<%= link_to edit_task_list_path(@task_list) do %><i class="fa fa-pencil fa-2x"></i>
 			<% end %>
+			&nbsp; &nbsp;
+			<%= link_to task_list_path(@task_list),
+                  method: :delete,
+                  data: { confirm: 'Are you sure?' } do %>
+			<i class="fa fa-trash fa-2x"></i>
+		<% end %>
 		</div>
 
 		<div id="task_items_wrapper">
