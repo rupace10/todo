@@ -4,6 +4,7 @@
 html {
   height: auto;
 }
+
 .border{
 	border-bottom: solid ;
 }
@@ -20,15 +21,32 @@ html {
 	.sign-up{
 		margin-top: 50px;
 		width: 100%;
-		text-align: center;
+		/*text-align: center;*/
 		margin-bottom: 25px;
+		P{
+			font-size: 1.3em;
+		}
+		i {
+			color: #a02929;
+			transition: all .4s ease-in-out;
+			&:hover {
+				color: #c44f4f;
+			}
+		}
 	}
 	.log-in{
 		margin: 20px;
 		padding: 20px 0;
-		text-align: center;
+		/*text-align: center;*/
 		p{
 			font-size: 2em;
+		}
+		i {
+			color: #a02929;
+			transition: all .4s ease-in-out;
+			&:hover {
+				color: #c44f4f;
+			}
 		}
 	}
 }

@@ -1,10 +1,13 @@
 // Place all the styles related to the task_lists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-html{
+/*html{
 	height: 100%;
-}
+}*/
 
+body{
+	height: auto;
+}
 a{
 	text-decoration: none;
 }
@@ -69,6 +72,13 @@ a{
 		height: auto;
 		border-radius: 9px;
 		box-shadow: 0 0 4px 4px rgba(0,0,0,.03);
+		i {
+			color: #a02929;
+			transition: all .4s ease-in-out;
+			&:hover {
+				color: #c44f4f;
+			}
+		}
 		a{
 			margin-top: 20px;
 			font-size: 2em;
