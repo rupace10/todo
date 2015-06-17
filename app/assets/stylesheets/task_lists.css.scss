@@ -1,14 +1,7 @@
 // Place all the styles related to the task_lists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-html{
-	height: 100%;
-}
 
-/*
-body{
-	height: auto;
-}*/
 a{
 	text-decoration: none;
 }
@@ -51,6 +44,13 @@ a{
 					font-style: italic;
 				}
 			}
+			i{
+				color: #933c3c;
+				transition: all .4s ease-in-out;
+				&:hover {
+					color: #600c3c;
+				}
+			}
 		}
 		#task_items_wrapper{
 			text-align: center;
@@ -59,6 +59,12 @@ a{
 				display: inline;
 				width: auto;
 				height: auto;
+				.create{
+					font-size: 1.2em;
+					padding: 0px;
+					width: 60px;
+					height: 30px
+				}
 			}
 		}
 	}
@@ -87,10 +93,10 @@ a{
 			i {
 			color: #a02929;
 			transition: all .4s ease-in-out;
-			&:hover {
-				color: #c44f4f;
+				&:hover {
+					color: #c44f4f;
+				}
 			}
-		}
 		}
 	}
 	.link{
@@ -109,6 +115,14 @@ a{
 		&:hover{
 		color: #d49f9f;
 		}
+		i {
+			color: white;
+			transition: all .4s ease-in-out;
+				&:hover {
+					color: #933c3c;
+				}
+		}
 	}
+
 
 }

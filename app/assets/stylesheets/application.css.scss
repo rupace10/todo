@@ -19,20 +19,22 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+@import "welcome.css.scss";
 @import "task_lists.css.scss";
 @import "task_items.css.scss";
-@import "welcome.css.scss";
+
 
 
 body {
-	background: linear-gradient(25deg, #e43f3f 10%, #f0f1e0 100%) no-repeat;
-	background: -webkit-linear-gradient(25deg, #e43f3f 10%, #f0f1e0 100%) no-repeat;
+	background: linear-gradient(25deg, #e43f3f 0%, #f0f1e0 100%) no-repeat;
+	background: -webkit-linear-gradient(0deg, #e43f3f 20%, #f0f1e0 100%) ;
 	background:    -moz-linear-gradient(25deg, #e43f3f 10%, #f0f1e0 100%) no-repeat;
 	background:      -o-linear-gradient(25deg, #e43f3f 10%, #f0f1e0 100%) no-repeat;
 	background:     -ms-linear-gradient(25deg, #e43f3f 10%, #f0f1e0 100%) no-repeat;
  	padding: 0px;
  	margin: 0px;
 }
+
 a{
 	text-decoration:none;
 }
@@ -40,6 +42,9 @@ a:before{
 	text-decoration:none;
 }
 a:hover{
+	text-decoration:none;
+}
+a:after{
 	text-decoration:none;
 }
 
