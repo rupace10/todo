@@ -1,22 +1,88 @@
 <div class="wrapper container">
 	<div class="jumbotron">
 		<div class="logo">
-
 		</div>
 		<div class="title">
 			<h1>Todo</h1>
 		</div>
 		<p>This application lets you to note down all your tasks. If the tasks are complete then you can mark them as complete</p>
+	</div>
 
-	</div>
-	<div class="sign-up">
-		<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-danger btn-lg" %>
-	</div>
-	<div class="border"></div>
+<!-- log in form starts -->
 	<div class="log-in">
-	<p class="login-text">Already have an account!!</p>
-		<%= link_to "Log in", new_user_session_path, class: "btn btn-danger btn-mg" %>
+		<p class="login-text">Already have an account!!</p>
+		<%#= link_to "Log in", new_user_session_path, class: "btn btn-danger btn-mg" -%>
+		<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+		  <div class="input-group input-group-lg col-md-6 margin-bottom-sm">
+		    <span class="input-group-addon">
+		      <i class="fa fa-envelope"></i>
+		    </span>
+		    <%= f.email_field :email, autofocus: true, placeholder: "E-mail address",class: "form-control" %>
+		  </div>
+		  </br>
+
+		  <div class="input-group input-group-lg col-md-6 margin-bottom-sm">
+		    <span class="input-group-addon">
+		      <i class="fa fa-lock"></i>
+		    </span>
+		    <%= f.password_field :password, autocomplete: "off", placeholder: "Password", class: "form-control" %>
+		  </div>
+
+		  <% if devise_mapping.rememberable? -%>
+		    <div class="field">
+		      <%= f.check_box :remember_me %>
+		      <%= f.label :remember_me %>
+		    </div>
+		  <% end -%>
+		  </br>
+		  <div class="actions">
+		    <%= f.submit "Log in", class: "btn btn-danger btn-lg" %>
+		  </div>
+		<% end %>
 	</div>
+	<!-- log in div ends here -->
+
+	<!-- signup form starts -->
+	<div class="sign-up">
+		<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+		  <%= devise_error_messages! %>
+		  <div class="input-group input-group-lg col-md-6 margin-bottom-sm">
+		    <span class="input-group-addon">
+		      <i class="fa fa-envelope"></i>
+		    </span>
+		    <%= f.email_field :email, autofocus: true, placeholder: "E-mail address",class: "form-control" %>
+		  </div>
+
+		  </br>
+
+		  <div class="input-group input-group-lg col-md-6 margin-bottom-sm">
+		    <span class="input-group-addon">
+		      <i class="fa fa-lock"></i>
+		    </span>
+		    <%= f.password_field :password, autocomplete: "off", placeholder: "Password", class: "form-control" %>
+		  </div>
+		  <% if @minimum_password_length %>
+		    <em>(<%= @minimum_password_length %> characters minimum)</em>
+		  <% end %><br />
+
+
+		  <div class="input-group input-group-lg col-md-6 margin-bottom-sm">
+		    <span class="input-group-addon">
+		      <i class="fa fa-lock"></i>
+		    </span>
+		    <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Password", class: "form-control" %>
+		  </div>
+		  </br>
+		  <div class="actions">
+		    <%= f.submit "Sign up", class: "btn btn-danger btn-lg" %>
+		  </div>
+		<% end %>
+	</div>
+	<!-- signup form end -->
+
+	<div class="border"></div>
+
+
 </div>
 <footer>
 <p class="footer-text">Developd by: Rupesh Maharjan </p>
