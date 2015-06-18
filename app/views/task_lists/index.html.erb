@@ -1,3 +1,7 @@
+<div class="logout">
+    <%= link_to 'Log out', destroy_user_session_path, :method => :delete, class: "btn btn-danger btn-mg" %>
+</div>
+
 <div class="task-list">
 <h1 class="task-heading" >Task List</h1>
   <div class="tl-content container">
@@ -21,6 +25,3 @@
 </br>
       <%#= link_to 'Edit', edit_task_list_path(task_list) -%>
         <%#= link_to 'Destroy', task_list, method: :delete, data: { confirm: 'Are you sure?' }- %>
-<div class="link">
-    <%= link_to 'Log out', destroy_user_session_path, :method => :delete, class: "btn btn-danger btn-mg" %>
-</div>

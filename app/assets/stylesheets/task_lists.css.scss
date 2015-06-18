@@ -108,10 +108,12 @@ a{
 	}
 }
 
-.link{
-	margin-top: 15px;
-	text-align: center;
+.logout{
+	/*margin: 5px 10px 0px 0px;*/
+	/*text-align: center;*/
+	float: right;
 	padding: 2px;
+
 	a{
 	transition: all .4s ease-in-out;
 		&:hover{
@@ -125,6 +127,4 @@ a{
 				}
 		}
 	}
-
-
 }
